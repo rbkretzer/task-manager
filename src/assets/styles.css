@@ -1,0 +1,106 @@
+/* Google fonts - Open Sans */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+:root {
+    /* colors */
+    --blue: rgba(79, 192, 210, 1);
+    --green: rgba(82, 210, 154, 1);
+    --yellow: rgba(231, 196, 104, 0.7);
+    --orange: rgba(235, 118, 85, 1);
+    --gray-bg: #2d2d2d;
+    --light-bg: rgba(255, 255, 255, 0.1);
+    --text: rgba(255, 255, 255, 0.9);
+}
+
+/* body */
+body {
+    background: var(--gray-bg);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+.material-icons.md-14 {
+    font-size: 14px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    float: left;
+}
+
+.tabs-label {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.tabs-radio {
+    display: none;
+}
+
+.tabs-content {
+    order: 1;
+    min-width: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    display: none;
+}
+
+.tabs-radio:checked+.tabs-label {
+    font-weight: bold;
+    color: #009578;
+    border-bottom: 2px solid #009578;
+}
+
+.tabs-radio:checked+.tabs-label+.tabs-content {
+    display: initial;
+}
+table {
+    border-spacing: 0;
+}
+
+th {
+    resize: horizontal;
+    overflow: auto;
+    border-right: 1px solid var(--text);
+    text-align: left;
+}
+th::-webkit-resizer {
+    background-color: transparent;
+}
+
+td {
+    border-right: 1px solid var(--text);
+}
+
+tbody tr:hover {
+    background-color: var(--text);
+    color: var(--gray-bg);
+}
+/* wrapper */
+.wrapper {
+    width: 100%;
+    padding: unset;
+    background: var(--light-bg);
+    color: var(--text);
+    overflow: hidden;
+    position: relative;
+}
+
+.search {
+    font-family: inherit;
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 1.3rem;
+    color: #fff;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+    margin: 15px 25% 15px 25%;
+}
+
+.search:disabled {
+    display: none;
+}
